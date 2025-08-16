@@ -1,0 +1,67 @@
+/* 矢印・ドットの調整 */
+.slick-prev:before,
+.slick-next:before {
+  color: rgba(0, 0, 0, 0.5);
+}
+.slick-next {
+  right: 10px;
+}
+.slick-prev {
+  left: 10px;
+  z-index: 1;
+}
+.slick-dots {
+  bottom: 10px;
+}
+
+/* common */
+body {
+  padding-bottom: 400px;
+}
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+@media (width <= 768px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+}
+h1 {
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+h2 {
+  text-align: center;
+  font-weight: normal;
+}
+button {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+.carousel-wrapper {
+  position: relative;
+}
+.carousel {
+  margin-bottom: 3em;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+.item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
